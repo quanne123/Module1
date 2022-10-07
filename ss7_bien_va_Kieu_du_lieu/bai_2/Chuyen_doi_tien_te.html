@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="Dauvao">
+<select name="" id="from">
+    <option value="a"> (VND)</option>
+    <option value="b"> (USD)</option>
+</select>
+<select name="" id="to">
+    <option value="a">  (VND)</option>
+    <option value="b"> (USD)</option>
+</select>
+<button onclick="triển_tiền()">convert</button>
+<p id="ketqua">  </p>
+
+
+
+</body>
+</html>
+<script>
+    function triển_tiền() {
+        let sotien = document.getElementById('Dauvao').value
+        let from = document.getElementById('from').value
+        let to = document.getElementById('to').value
+        let result;
+        if (from == to) {
+            result = "result:  " + sotien + " Đ";
+        } else {
+            result = "result:  " + sotien + " $";
+        }
+
+        if (from == "a" && to == "b") {
+            result = "result: " + (sotien * 23000) + "$";
+        }
+        else if (from == b && to == "a") {
+            result = "result: " + (sotien / 23000) + "Đ";
+        }
+        document.getElementById("ketqua").innerHTML = result
+
+    }
+
+</script>
