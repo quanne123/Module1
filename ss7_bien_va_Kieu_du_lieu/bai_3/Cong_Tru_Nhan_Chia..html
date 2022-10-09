@@ -5,28 +5,40 @@
     <title>Title</title>
 </head>
 <body>
-<input type="number" id="Nhapsothunhat" value="a">
-<input type="number" id="Nhapsothu2" value="b">
-<button onclick="triển_tiền()">cong</button>
-<button onclick="triển_tiền()">tru</button>
-<p id="ketqua">  </p>
+<h> Ứng dụng máy tính</h><br>
+<input type="number" id="nhapsothu1">
+<input type="number" id="nhapsothu2"><br>
+<button type="submit" onclick="Addition()">Addition(+)</button>
+<button type="submit" onclick="Subtraction()">Subtraction(-)</button>
+<button type="submit" onclick="Multiplication()">Multiplication(X)</button>
+<button type="submit" onclick="Division()">Division(/)</button>
+<script>
+    function Addition() {
+        var A = parseInt(document.getElementById("nhapsothu1").value);
+        var B = parseInt(document.getElementById("nhapsothu2").value);
+        var C = A + B ;
+        document.write("Result = " +C);
+    }
+    function Subtraction() {
+        var A = parseInt(document.getElementById("nhapsothu1").value);
+        var B = parseInt(document.getElementById("nhapsothu2").value);
+        var C = A - B ;
+        document.write("Result = " +C);
+    }
+    function Multiplication() {
+        var A = parseInt(document.getElementById("nhapsothu1").value);
+        var B = parseInt(document.getElementById("nhapsothu2").value);
+        var C = A * B ;
+        document.write("Result = " +C);
+    }
+    function Division() {
+        var A = parseInt(document.getElementById("nhapsothu1").value);
+        var B = parseInt(document.getElementById("nhapsothu2").value);
+        var C = A / B ;
+        document.write("Result = " +C);
+
+    }
+</script>
+
 </body>
 </html>
-<script>
-
-    function triển_tiền() {
-        let number1 = document.getElementById("num1").value; //"7"
-        let number2 = document.getElementById("num2").value; //"9"
-        let result = Number(number1) + Number(number2); //16
-        document.getElementById("result").innerHTML = result;
-    }
-
-    function () {
-        let number1 = document.getElementById("num1").value; //"7"
-        let number2 = document.getElementById("num2").value; //"9"
-        let result = Number(number1) - Number(number2); //16
-        document.getElementById("result").innerHTML = result;
-    }
-
-
-</script>
