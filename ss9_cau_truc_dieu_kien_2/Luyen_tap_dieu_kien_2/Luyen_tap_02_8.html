@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a =parseFloat(prompt("tien luong"));
+    if(a == 5000000){
+        b = a - (a*5);
+        document.write('tien thue thu nhap la :' + b)
+    }else if (5000000<= a <= 8000000){
+        b = a -(a*10/100);
+        document.write('tien thue thu nhap la :' + b)
+    }else if (10000000 <= a <= 18000000 ) {
+        b = a - (a * 15/100);
+        document.write('tien thue phai nop la :' + b)
+    }else if (18000000 <= a <= 32000000){
+        b = a -(a * 20/100);
+        document.write('tien thue thu thap la :' + b)
+    }else if (32000000 <= a <= 52000000){
+        b = a -(a*25/100);
+        document.write('tien thue thu thap la :' + b)
+    }else if (52000000 <= a <= 80000000){
+        b = a -(a*30/100);
+    }else {
+        b = a -(a*35/100);
+    }
+</script>

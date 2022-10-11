@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = parseFloat(prompt('sodien'))
+    let b = parseFloat(prompt('tien dien'))
+    let bac1 =  1678
+    let bac2 = 1734
+    let bac3 = 2014
+    if(a < 0){
+        alert("Nhap lai so dien")
+    }else if (a >= 50) {
+        b = a * bac1
+        document.write('so tien dien phai tra la :' + b)
+    }else if (a <= 100){
+        b = 50 * bac1+((a-50)*bac2)
+        document.write('so tien dien phai tra la :' + b)
+    }else if (a <= 200){
+        b =50 *bac1 +(50*bac2)+((a-100)*bac3)
+        document.write('so tien phai tra la :' + b)
+    }
+</script>
