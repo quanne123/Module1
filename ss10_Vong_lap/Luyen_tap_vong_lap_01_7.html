@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+     let phamvi = Number(prompt("Tro choi doan so tu 0 -"))
+    let nhapso = Number(prompt("Nhap so muon doan"))
+    let random = Math.floor(Math.random() * phamvi)
+     let count = 0
+    while (nhapso !== random) {
+         count++;
+         if (count == 4){
+             alert("Đoán hết rồi má ")
+             break;
+         }else if (nhapso < random){
+             alert("Nhỏ quá đoán sai rùi");
+         }else {
+             alert("Đoán lớn quá rồi pà")
+         }
+         nhapso = Number(prompt("Nhap so muon doan"));
+    }
+    if (count == 4){
+        document.write("Đoán đúng rùi hên ghê rứa pà!")
+    }
+</script>

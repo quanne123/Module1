@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a = 0, b = 0, c =0 ,Tong = 0
+    let F = "";
+    for(let i = 0; i<20;i++){
+        if(i==0){
+            a=1
+            c=1
+            F += a+ " "
+            Tong +=a
+        }else{
+            a= b+c
+            b = c
+            c = a
+            F += a+ " "
+            Tong +=a
+            console.log(i + "=" + a)
+        }
+    }
+    document.write("Day fibonacci la "+F  + "<br>")
+    document.write("Tong cua cac so bang = "+ Tong)
+</script>
+
