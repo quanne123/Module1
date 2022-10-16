@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+
+</body>
+<script>
+    let num=prompt('nhap chuoi ky tu :');
+    let str = num.toString();
+    let input = [str];
+    let result = [];
+    let revert = (str.length - 1);
+    while (revert >= 0) {
+        (result.push(str[revert]))
+        revert--;
+    }
+    alert('Chuoi dao nguoc la: '+result.join());
+</script>
+</html>
