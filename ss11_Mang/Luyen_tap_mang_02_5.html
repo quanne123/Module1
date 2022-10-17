@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    let a = prompt('Nhap chuoi thu 1 ')
+    let b = prompt(' Nhap chuoi thu 2')
+    let sosanh = true
+    for(i=0;i<a.length;i++) {
+        if (a[i] !== b[i]) {
+            sosanh = false
+            break;
+        }
+    }
+    if (sosanh){
+        alert("chuoi 1 giong chuoi 2 ")
+    }else{
+        alert("chuoi 1 khong giong chuoi 2")
+    }
+
+</script>
