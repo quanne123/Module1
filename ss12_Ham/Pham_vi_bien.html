@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pham_vi_bien</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let aNewVariable = "is global.";
+    function dosomething(incomingBits) {
+        alert("global variable within the function: " + aNewVariable);
+        alert("local variable within the function: " + incomingBits);
+    }
+
+</script>
+<script>
+    dosomething("is a local variable");
+    alert("global var outside the function: " +aNewVariable);
+    alert("local var outside the function: " + incomingBits);
+</script>

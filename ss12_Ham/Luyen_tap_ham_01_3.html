@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let S = soSanh(+prompt('nhập vào số a'), +prompt('nhập vào số b'));
+    alert(S)
+    function soSanh(a,b) {
+        let S ;
+        if (a>b) {
+           S = (' số' + a + 'lớn hơn'+ 'số' + b)
+        } else {
+            S = (a + b) ;
+        }
+        return S;
+    }
+
+</script>
+</body>
+</html>
