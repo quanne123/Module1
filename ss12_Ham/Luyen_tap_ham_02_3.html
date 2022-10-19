@@ -9,14 +9,14 @@
 </body>
 </html>
 <script>
-    function giaithua(a){
-        let gt;
-        if(a == 0){
-            gt = 1
-        }else{
-            gt = 
+
+
+    function  giaithua(x) {
+        if (x===0) {
+            return 1;
+        }else {
+            return x * giaithua(x - 1);
         }
     }
-    let gt =giaithua(prompt("nhap so bat ky"))
-    alert("giai thua la " + gt)
+    document.write(giaithua(6));
 </script>

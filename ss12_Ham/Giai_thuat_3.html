@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai Thuat</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let s1 = prompt("nhap ky tu bat ky")
+    let s2 = prompt("Nhap ky tu bat ky")
+    function commonCharacterCount(s1, s2) {
+        var count = 0;
+        var str = "";
+        for (var i = 0; i < s1.length-1; i++) {
+            if (s2.indexOf(s1[i]) > -1 && str.indexOf(s1[i]) == -1) {
+                count++;
+                str.concat(s1[i])
+            }
+        }
+
+        return count;
+    }
+
+   document.write(commonCharacterCount(s1,s2));
+</script>
