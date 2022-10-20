@@ -2,9 +2,29 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<button type="button" onclick="main()">Chuyen doi</button>
 </body>
 </html>
+<script>
+    var temperature = function(celsius){
+        this.celsius =function () {
+            return ( (celsius*1.8000)+32.00)
+        }
+        this.ToKevin = function () {
+            return (celsius+273.15 )
+
+        }
+        }
+        function main() {
+        var rec1 =new temperature(25);
+        var main2 = rec1.celsius();
+        var main3 =rec1.ToKevin();
+        alert("Do F la " +main2 +"Do Ken la" + main3);
+        }
+
+
+
+</script>
