@@ -2,32 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title></title>
 </head>
 <body>
-
+<script>
+    function tinhChuViHinhTron(banKinh) {
+        let chuVi = 2 * banKinh * Math.PI;
+        return chuVi;
+    }
+    function tinhDienTichHinhTron(banKinh) {
+        let dienTich = banKinh * banKinh * Math.PI;
+        return dienTich;
+    }
+    let banKinh = parseFloat(prompt("Nhập vào bán kính R"));
+    let perimeter = tinhChuViHinhTron(banKinh);
+    let area = tinhDienTichHinhTron(banKinh);
+    document.write("Chu vi hình tròn có bán kính " + banKinh + " là: " + perimeter + "<br>" +" Có <d></d>iện tích là: " + area);
+</script>
 </body>
 </html>
-<script> let S =dientich(prompt('Nhap ban kinh'))
-
-        alert("Dien tich hinh tron " + S)
-    function dientich(a) {
-        let  b  = 3.14;
-        let S;
-            S = a*a*b
-        // inputa = prompt("ban kinh ");
-        // const b = 3.14;
-        // let a = parseInt(inputa);
-        // let dien_tich_hinh_tron = a*a*b;
-        // document.write("dien_tich_hinh_tron is a "+ dien_tich_hinh_tron);
-        return S;
-    }
-    function chuvi(c) {
-            let b = 3.14;
-            let P;
-            P = c * b
-            return P;
-        }
-        let P =chuvi(prompt('nhap duong kinh '))
-    alert("Chu vi hinh tron "+ P)
-</script>

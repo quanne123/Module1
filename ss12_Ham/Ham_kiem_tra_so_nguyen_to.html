@@ -10,7 +10,7 @@
 </html>
 <script>
     let a = parseInt(prompt("Nhap so "));
-    let Flag = false;
+    let kiemtra = false;
     let count = 0
     isPrime(a)
     function isPrime(a) {
@@ -26,10 +26,10 @@
             }
         }
             if (count == 2) {
-                Flag = true
+                kiemtra = true
 
 
-            }if(Flag){
+            }if(kiemtra){
                 document.write(a + 'la so nguyen to')
             }else {
                 document.write(a + 'khong phai so nguyen to')
