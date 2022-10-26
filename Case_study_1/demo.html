@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let arr = []
+    let count = 0
+    let count1 = 0
+    let n = prompt("Nhap do dai")
+    for (let i = 0; i < n; i++) {
+        c = prompt("nhap phan tu")
+        arr.push(c)
+    }
+    document.write(arr)
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0) {
+            count++
+        } else {
+            count1++
+
+        }
+
+    }
+    if (count == count1) {
+        document.write('OK')
+    } else {
+        document.write("not Ok")
+    }
+
+
+</script>

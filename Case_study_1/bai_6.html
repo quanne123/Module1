@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra nguyen am</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    count = 0
+    arr=['o','u','i','a','e',]
+    arr1=['O','U','I','A','E',]
+    let a = prompt("Nhap ky tu")
+    for(i=0;i<arr.length;i++) {
+        if (a == arr[i] || a == arr1[i]) {
+            count++
+        }
+    }
+        if (count > 0){
+            alert(a + ' la nguyen am ')
+        }
+        else {
+            alert(a + ' la phu am ')
+        }
+
+
+</script>

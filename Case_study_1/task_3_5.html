@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+
+    let A = ['cafe', 'nước lọc', 'nước ép cà chua', 'nước ép cà rốt', 'nước dừa', 'cam vắt',]
+    let b = [10000, 20000, 30000, 35000, 25000, 17000]
+    let sum = 0
+    let arrA = []
+    let arrB = []
+    let c = prompt("Menu hôm nay có " + "\n" +
+        "01 Cafe" + "\n" +
+        "02 nước lọc" + "\n" +
+        "03 nước ép cà chua" + "\n" +
+        "04 nước ép cà rốt" + "\n" +
+        "05 nước dùa" + "\n" +
+        "06 cam vắt " + "\n" +
+        "07 kết thúc")
+    do {
+        if (c < 7) {
+            alert("giá " + "" + A[c] + "là" + b[c])
+            let sl = prompt("Nhập số lượng sản phẩm")
+            arrA.push(sl + A[c])
+            let tongtien = sl * b[c]
+            arrB.push(tongtien)
+            alert("Tổng tiền phải trả: " + tongtien + "vnđ")
+            c = prompt("Nhap 0-6 để order tiếp hoặc nhập 7 để thoát ra ")
+
+        } else {
+            for (i = 0; i < arrB.length; i++) {
+                sum += arrB[i]
+            }
+            break;
+
+        }
+    } while (c !== 7)
+    alert("Các món đã chọn là " + arrA)
+    alert("Số tiền cần phải thanh toán :" + sum)
+    alert("Lần sau ghé lại nha")
+
+</script>
+
+
+</script>

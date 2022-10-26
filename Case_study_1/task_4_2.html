@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let s = 'abcdsdacde'
+
+    differentSymbolsNaive(s)
+
+    function differentSymbolsNaive() {
+
+        let dem = 0
+        let m = s;
+        for (let i = 0; i < s.length; i++) {
+            m = m.substr(1)
+            if (m.indexOf(s[i]) == -1) {
+                dem++
+            }
+        }
+        return dem;
+   console.log(dem)
+    }
+
+</script>

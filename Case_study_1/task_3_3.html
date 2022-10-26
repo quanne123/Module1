@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+        let phansoA =[5,2,5]
+        let phansoB = [6,3,4]
+        let max = 0;
+        for (let i = 1; i < phansoA.length; i++) {
+            let a = phansoA[max];
+            let b = phansoB[max];
+            let c = phansoA[i];
+            let d = phansoB[i];
+            if (a*d - b*c < 0) {
+                max = i;
+            }
+        }
+        document.writeln(max)
+
+
+
+</script>
