@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+
+let a = "aabcc"
+let b = "acbdd"
+let c = a.split('')
+let d = b.split('')
+let count = 0;
+for (let i=0;i<c.length;i++){
+    for (let j =0;j<d.length;j++){
+        if(c[i]===d[j]){
+            c.splice(i,1)
+            d.splice(j,1)
+            count ++
+        }
+
+    }
+
+}
+document.write(count)
+
+
+
+</script>

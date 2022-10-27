@@ -9,22 +9,14 @@
 </body>
 </html>
 <script>
-    let s = 'abcdsdacde'
+    let s = prompt("Nhập vào một chuỗi kí tự");
+    let array = s.split("");
+    let result = [];
 
-    differentSymbolsNaive(s)
-
-    function differentSymbolsNaive() {
-
-        let dem = 0
-        let m = s;
-        for (let i = 0; i < s.length; i++) {
-            m = m.substr(1)
-            if (m.indexOf(s[i]) == -1) {
-                dem++
-            }
+    for (let i = 0; i < array.length; i++) {
+        if (result.indexOf(array[i]) === -1) {
+            result.push(array[i]);
         }
-        return dem;
-   console.log(dem)
     }
-
+    document.write("Chuỗi " + s + " Có " + result.length + " kí tự khác nhau là: " + result)
 </script>
