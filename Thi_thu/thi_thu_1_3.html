@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vị trí các số nhỏ nhất</title>
+</head>
+<body>
+<script>
+    let n =prompt("nhap do dai cua mang")
+    let arr =[];
+
+    let a =[];
+    for (let i=0; i<n;i++){
+
+        let c = parseInt(prompt('nhập phần tử '+i))
+        arr.push(c)
+
+    }document.writeln('mảng số nguyên vừa nhập'+arr)
+    let min =arr[0]
+    for (let i=1;i<arr.length;i++){
+        if (arr[i] < min){
+            min = arr[i]
+
+
+        }
+    }document.writeln('vậy giá trị nhỏ nhất là'+min+'<br>');
+
+    for (let i=0; i<arr.length;i++){
+        if (min==arr[i]){
+            a.push(i)
+        }
+    }
+    document.write('vị trí nhỏ nhát là: '+a)
+
+</script>
+</body>
+</html>

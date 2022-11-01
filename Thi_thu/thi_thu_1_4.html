@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So chhinh Phuong</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+   // function timSochinhphuong(n) {
+   //     let soCP = 0
+   //     let i =0
+   //     while (i<=n){
+   //         if (Math.pow(i,2)==n){
+   //             flag = 1
+   //             break ;
+   //         }
+   //         i++;
+   //
+   //     }
+   //
+   //     return soCP
+   // }
+   let a = prompt("Nhap do dai cua mang")
+    let arr = []
+   let count = 0
+    for (let i=0;i<a;i++){
+        let c = parseInt(prompt("Nhap phan tu"))
+        arr.push(c)
+    }
+    for (i=0;i<arr.length;i++) {
+        if (Math.sqrt(arr[i])%1==0){
+            count++
+        }
+    }
+    document.write('so chinh phuong co trong mang la: ' +count)
+
+</script>

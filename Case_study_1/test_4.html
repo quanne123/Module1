@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function check(a) {
+        let check = false
+        let b = 0
+        let i = 1
+        if (a === 0) {
+            check = true
+        } else {
+            while (b <= a && i <= a) {
+                b += i
+                i += b
+                if (b === a || i === a)
+                    check = true
+
+            }
+        }
+        return check;
+
+    }
+    alert(check(5))
+
+    function timSofibo(a) {
+        let fibo = []
+        for (let i = 0; i < a.length; i++) {
+            if (check(a[i]) === true) {
+                fibo.push(a[i])
+            }
+        }
+        return fibo
+
+    }
+
+    let n = parseInt(prompt('Nhap so phan tu cua mang '))
+    let newarr = []
+    for (let i = 0; i <= n; i++) {
+        newarr[i] = parseInt(prompt('Nhap vao phan tu thu i'));
+
+    }
+    let a = timSofibo(newarr);
+  a.sort(function (a,b) {
+        return (a - b)
+
+    })
+    document.write(a);
+</script>

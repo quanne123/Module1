@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let n = prompt("Nhap do dai cua mang")
+    let arr = []
+    let c =[] ;
+    for (let i = 0; i < n; i++) {
+         c[i] = parseInt(prompt("nhap phan tu"+ i))
+     while (arr.indexOf(c[i]) !== -1) {
+           c[i] =  parseInt(prompt('nhập lại'))
+         }
+         arr.push(c[i])
+    }
+    document.write(arr)
+
+</script>
